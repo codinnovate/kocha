@@ -1,27 +1,30 @@
-/* This CSS code snippet creates a simple responsive grid layout with three columns. 
-   As the screen size decreases, it adjusts to two columns and finally to a single column on very small screens. */
-
-.container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Creates three equal-width columns */
-  gap: 16px; /* Adds space between grid items */
+/* This CSS snippet creates a simple card layout for a user profile */
+.profile-card {
+  background-color: #f9f9f9; /* Light grey background for the card */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 20px; /* Space inside the card */
+  max-width: 300px; /* Restrict width for layout consistency */
+  margin: 0 auto; /* Center the card horizontally */
 }
 
-@media (max-width: 768px) {
-  .container {
-    grid-template-columns: repeat(2, 1fr); /* Adjusts to two columns on medium-sized screens */
-  }
+.profile-card img {
+  width: 100px; /* Fixed width for profile image */
+  height: 100px; /* Fixed height for profile image */
+  border-radius: 50%; /* Circular profile image */
+  display: block; /* Ensures the image is treated as a block element */
+  margin: 0 auto 10px; /* Center image and add space below */
 }
 
-@media (max-width: 480px) {
-  .container {
-    grid-template-columns: 1fr; /* Stacks all content in a single column on small screens */
-  }
+.profile-card h2 {
+  font-size: 1.5em; /* Larger font size for the user's name */
+  text-align: center; /* Center-align the text */
+  margin: 10px 0; /* Vertical spacing around the name */
 }
 
-.item {
-  background-color: #f0f0f0;
-  padding: 20px;
-  border: 1px solid #ccc;
-  text-align: center;
+.profile-card p {
+  font-size: 1em; /* Standard font size for the description */
+  text-align: center; /* Center-align the text */
+  color: #555; /* Grey color for the text */
 }
+```
