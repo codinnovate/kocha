@@ -1,0 +1,16 @@
+/* This CSS code snippet centers a container both vertically and horizontally on the page */
+.container {
+  display: flex; /* Enables Flexbox layout */
+  justify-content: center; /* Centers items horizontally */
+  align-items: center; /* Centers items vertically */
+  height: 100vh; /* Sets the container height to fill the viewport */
+  background-color: #f0f0f0; /* Light gray background for better visibility */
+}
+
+/* Example content styling within the centered container */
+.content {
+  background-color: #ffffff; /* White background for the content */
+  padding: 20px; /* Adds padding around the content */
+  border-radius: 8px; /* Rounds the corners of the content box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+}
