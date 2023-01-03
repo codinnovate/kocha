@@ -1,0 +1,30 @@
+/* This CSS snippet creates a simple responsive card layout using Flexbox. */
+
+.container {
+  display: flex; /* Enables Flexbox on the container */
+  flex-wrap: wrap; /* Allows items to wrap into multiple rows */
+  gap: 20px; /* Adds space between each card */
+  justify-content: center; /* Centers cards horizontally */
+  padding: 20px;
+}
+
+.card {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 1 1 300px; /* Allows cards to grow and shrink, with a base width of 300px */
+  max-width: 300px; /* Ensures cards don't grow too large */
+  padding: 20px;
+  text-align: center;
+}
+
+.card h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #555;
+  line-height: 1.6;
+}
+```
