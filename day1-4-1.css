@@ -1,0 +1,30 @@
+/* This CSS snippet demonstrates how to create a simple responsive navigation bar. */
+
+/* Container for the navigation bar */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Distributes space between items */
+  background-color: #333; /* Dark background for contrast */
+  padding: 10px;
+}
+
+/* Style for navigation links */
+.navbar a {
+  color: white; /* White text color for readability */
+  text-align: center;
+  padding: 14px 20px; /* Adds space around the links */
+  text-decoration: none; /* Removes underline from links */
+}
+
+/* Changes link color on hover */
+.navbar a:hover {
+  background-color: #ddd; /* Light gray background on hover */
+  color: black; /* Changes text to black on hover */
+}
+
+/* Responsive design: stack links vertically on smaller screens */
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column; /* Stacks items vertically */
+  }
+}
