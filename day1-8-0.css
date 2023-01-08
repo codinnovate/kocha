@@ -1,0 +1,16 @@
+/* This CSS snippet creates a simple card layout with hover effects for a beginner-level UI component */
+
+.card {
+  background-color: #ffffff; /* Sets the background color of the card */
+  border: 1px solid #e0e0e0; /* Adds a light gray border */
+  border-radius: 8px; /* Rounds the corners of the card */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+  padding: 16px; /* Adds space inside the card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Moves the card up slightly on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increases shadow for a more pronounced hover effect */
+}
+```
