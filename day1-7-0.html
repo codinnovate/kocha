@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form with Validation</title>
+    <style>
+        /* Styling the form and its elements */
+        form {
+            max-width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+        .error {
+            color: red;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+
+<form id="contactForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <div id="nameError" class="error"></div>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <div id="emailError" class="error"></div>
+
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+    // JavaScript to handle form validation
+    const form = document.getElementById('contactForm');
+
+    form.addEventListener('submit', function(event) {
+        let valid = true;
+        const nameError = document.getElementById('nameError');
+        const emailError = document.getElementById('emailError');
+
+        nameError.textContent = '';
+        emailError.textContent = '';
+
+        // Check if name is empty
+        if (!form.name.value.trim()) {
+            nameError.textContent = 'Name is required.';
+            valid = false;
+        }
+
+        // Check if email is empty or invalid
+        if (!form.email.value.trim()) {
+            emailError.textContent = 'Email is required.';
+            valid = false;
+        } else if (!/\S+@\S+\.\S+/.test(form.email.value)) {
+            emailError.textContent = 'Email is invalid.';
+            valid = false;
+        }
+
+        // If form is invalid, prevent submission
+        if (!valid) {
+            event.preventDefault();
+        }
+    });
+</script>
+
+</body>
+</html>
