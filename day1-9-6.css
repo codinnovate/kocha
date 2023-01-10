@@ -1,0 +1,13 @@
+/* This code snippet demonstrates how to create a simple card layout with a shadow effect */
+.card {
+  width: 300px; /* Sets the width of the card */
+  padding: 20px; /* Adds space inside the card */
+  background-color: #ffffff; /* Sets the background color of the card */
+  border-radius: 8px; /* Rounds the corners of the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow effect */
+  transition: transform 0.2s; /* Adds a smooth transition on hover for a scaling effect */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Scales the card up slightly on hover for emphasis */
+}
