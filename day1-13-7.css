@@ -1,0 +1,20 @@
+/* This CSS snippet styles a simple card component with a shadow effect and rounded corners */
+
+.card {
+  background-color: #fff; /* Sets the background color of the card to white */
+  border-radius: 8px; /* Rounds the corners of the card */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+  padding: 16px; /* Adds space inside the card for content */
+  max-width: 300px; /* Limits the maximum width of the card */
+  margin: 20px auto; /* Centers the card horizontally and adds vertical spacing */
+}
+
+.card h2 {
+  font-size: 1.5em; /* Sets the font size for the card title */
+  margin-bottom: 12px; /* Adds space below the title */
+}
+
+.card p {
+  color: #333; /* Sets the text color for the card content */
+  line-height: 1.6; /* Improves readability by adjusting line spacing */
+}
