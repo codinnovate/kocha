@@ -1,0 +1,30 @@
+/* CSS Grid Layout Example: Creating a Simple Responsive Card Grid */
+
+.container {
+  display: grid; /* Establishes a grid layout */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Creates responsive columns */
+  gap: 16px; /* Adds space between grid items */
+  padding: 20px;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s; /* Smooth transition for scale effect */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slightly enlarges the card on hover */
+}
+
+/* Example usage: 
+<div class="container">
+  <div class="card">Card 1</div>
+  <div class="card">Card 2</div>
+  <div class="card">Card 3</div>
+  <!-- Add more cards as needed -->
+</div>
+*/
