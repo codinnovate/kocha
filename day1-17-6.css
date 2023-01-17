@@ -1,0 +1,40 @@
+/* This CSS snippet creates a responsive card layout suitable for showcasing items or articles. */
+
+/* Basic styling for the card container */
+.card {
+  background-color: #fff; /* Set background color to white */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
+  overflow: hidden; /* Ensures children elements are clipped to the card's rounded corners */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Add a hover effect to scale the card slightly */
+.card:hover {
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+/* Styling for the image inside the card */
+.card img {
+  width: 100%; /* Make the image take the full width of the card */
+  height: auto; /* Maintain the aspect ratio of the image */
+  display: block; /* Ensures no extra space below the image */
+}
+
+/* Styling for card content */
+.card-content {
+  padding: 16px; /* Add padding around the content */
+}
+
+/* Example for a card title */
+.card-title {
+  font-size: 1.25rem; /* Increase font size for the title */
+  margin-bottom: 8px; /* Space between title and content */
+  color: #333; /* Dark grey color for text */
+}
+
+/* Example for card description */
+.card-description {
+  font-size: 1rem; /* Default font size for description */
+  color: #666; /* Lighter grey color for description text */
+}
