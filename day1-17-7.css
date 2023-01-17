@@ -1,0 +1,42 @@
+/* This CSS code snippet creates a responsive card layout. 
+   Cards will stack vertically on smaller screens and align side by side on larger screens. */
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows the cards to wrap to the next line if necessary */
+  gap: 16px; /* Adds space between each card */
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: calc(33.333% - 32px); /* Ensures three cards fit in a row with gaps */
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Creates a subtle hover effect */
+}
+
+.card-content {
+  padding: 16px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 32px); /* Adjusts card width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%; /* Stacks cards vertically on very small screens */
+  }
+}
