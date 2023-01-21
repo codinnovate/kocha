@@ -1,0 +1,18 @@
+/* This CSS code snippet creates a simple button with a hover effect */
+
+/* Style the button with padding, background color, and border radius */
+.button {
+  padding: 10px 20px;
+  background-color: #3498db; /* Blue background */
+  color: white; /* White text */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition effect */
+}
+
+/* Change the background color of the button when hovered */
+.button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+```
