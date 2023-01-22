@@ -1,0 +1,19 @@
+/* CSS Grid Layout for a Basic Photo Gallery */
+.gallery {
+  display: grid;
+  /* Creates a responsive grid with 3 columns on large screens, 2 on medium, and 1 on small */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px; /* Adds space between grid items */
+}
+
+.gallery-item {
+  background-color: #f0f0f0; /* Sets a light gray background for each item */
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+}
+
+.gallery-item img {
+  width: 100%; /* Ensures images fill the grid item */
+  border-radius: 4px;
+}
