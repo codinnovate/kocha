@@ -1,0 +1,19 @@
+/* This CSS snippet creates a responsive two-column layout. On smaller screens, it switches to a single column. */
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap onto the next line */
+  margin: 0 -15px; /* Negative margin to counteract padding on columns */
+}
+
+.column {
+  flex: 50%; /* Each column takes up 50% of the container's width */
+  padding: 0 15px; /* Padding between columns */
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+@media (max-width: 600px) {
+  .column {
+    flex: 100%; /* Columns take full width on smaller screens */
+  }
+}
