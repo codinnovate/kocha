@@ -1,0 +1,14 @@
+/* This CSS code snippet creates a simple card component with a hover effect */
+.card {
+  background-color: #f8f8f8; /* Light gray background for the card */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.2s; /* Smooth transition for the hover effect */
+  padding: 20px; /* Space inside the card */
+  max-width: 300px; /* Restricts the card's width */
+  margin: 20px; /* Margin around the card */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Moves the card up slightly on hover */
+}
