@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple To-Do List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 8px;
+            background-color: #f9f9f9;
+            margin-bottom: 5px;
+            border-radius: 4px;
+        }
+        li.completed {
+            text-decoration: line-through;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+<h2>To-Do List</h2>
+<input type="text" id="taskInput" placeholder="Add a new task...">
+<button onclick="addTask()">Add Task</button>
+
+<ul id="taskList">
+    <!-- Task items will be added here dynamically -->
+</ul>
+
+<script>
+    // Adds a new task to the to-do list
+    function addTask() {
+        const taskInput = document.getElementById('taskInput');
+        const taskText = taskInput.value.trim();
+        
+        if (taskText !== '') {
+            const taskList = document.getElementById('taskList');
+            const newTask = document.createElement('li');
+            newTask.textContent = taskText;
+            
+            // Toggles 'completed' class when a task is clicked
+            newTask.onclick = function() {
+                newTask.classList.toggle('completed');
+            };
+            
+            taskList.appendChild(newTask);
+            taskInput.value = ''; // Clear the input field
+        }
+    }
+</script>
+
+</body>
+</html>
