@@ -1,0 +1,44 @@
+/* This CSS snippet creates a card layout with a shadow effect for a simple UI component */
+
+.card {
+  /* Sets the card width and height */
+  width: 300px;
+  height: 200px;
+  
+  /* Adds padding inside the card */
+  padding: 20px;
+  
+  /* Sets the background color and border radius for rounded corners */
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  
+  /* Creates a subtle shadow effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+  /* Enables the card to be centered */
+  margin: 20px auto;
+  
+  /* Ensures the text inside the card is easy to read */
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Styles the header text inside the card */
+.card h1 {
+  /* Removes default margin and sets font size */
+  margin: 0;
+  font-size: 24px;
+  
+  /* Adds some color to the text */
+  color: #444;
+}
+
+/* Styles the paragraph text inside the card */
+.card p {
+  /* Adds some space between the header and paragraph */
+  margin-top: 10px;
+  
+  /* Sets font size and line height for readability */
+  font-size: 16px;
+  line-height: 1.5;
+}
