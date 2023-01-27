@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interactive Button</title>
+    <style>
+        /* Style for the button */
+        .interactive-button {
+            background-color: #4CAF50; /* Green background */
+            border: none; /* Remove borders */
+            color: white; /* White text */
+            padding: 15px 32px; /* Some padding */
+            text-align: center; /* Centered text */
+            text-decoration: none; /* Remove underline */
+            display: inline-block; /* Inline-block element */
+            font-size: 16px; /* Large font size */
+            margin: 4px 2px; /* Some margin */
+            cursor: pointer; /* Pointer/hand icon on hover */
+            border-radius: 4px; /* Rounded corners */
+        }
+    </style>
+    <script>
+        // Function to display an alert when the button is clicked
+        function showAlert() {
+            alert('Button clicked!');
+        }
+    </script>
+</head>
+<body>
+
+<h2>Interactive Button Example</h2>
+<!-- Button with an onclick event to trigger the showAlert function -->
+<button class="interactive-button" onclick="showAlert()">Click Me!</button>
+
+</body>
+</html>
