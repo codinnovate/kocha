@@ -1,0 +1,25 @@
+/* This CSS snippet styles a simple card layout for a beginner-to-intermediate level project */
+
+.card-container {
+  display: flex; /* Enables flexbox layout for the container */
+  justify-content: space-around; /* Distributes space evenly between the cards */
+  flex-wrap: wrap; /* Allows cards to wrap to the next line on smaller screens */
+  padding: 20px; /* Adds padding around the container */
+  background-color: #f4f4f9; /* Sets a light background color for the container */
+}
+
+.card {
+  background-color: #fff; /* Sets the card background color to white */
+  border-radius: 8px; /* Rounds the corners of the card */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+  margin: 10px; /* Adds space around individual cards */
+  padding: 20px; /* Adds padding inside the card */
+  width: 300px; /* Sets a fixed width for the cards */
+  transition: transform 0.3s, box-shadow 0.3s; /* Adds smooth transition effects for hover states */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Moves the card up slightly on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhances the shadow effect on hover */
+}
+```
