@@ -1,0 +1,43 @@
+/* CSS code to create a simple responsive card layout */
+.card-container {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow cards to wrap to the next line on smaller screens */
+  gap: 16px; /* Space between cards */
+  justify-content: center; /* Center cards horizontally */
+  padding: 20px;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Rounded corners for the card */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  overflow: hidden;
+  width: 100%;
+  max-width: 300px; /* Limit card width */
+  transition: transform 0.2s ease-in-out; /* Smooth scaling effect on hover */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slightly enlarge card on hover */
+}
+
+.card img {
+  width: 100%; /* Image should fill the card width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin: 0 0 8px;
+}
+
+.card-description {
+  font-size: 0.875rem;
+  color: #555;
+}
+```
