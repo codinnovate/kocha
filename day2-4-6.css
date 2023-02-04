@@ -1,0 +1,28 @@
+/* This CSS snippet creates a simple card layout with a shadow effect */
+
+.card-container {
+  display: flex; /* Allows for horizontal alignment */
+  justify-content: center; /* Centers the card horizontally */
+  align-items: center; /* Centers the card vertically */
+  height: 100vh; /* Full viewport height */
+  background-color: #f0f0f0; /* Light gray background for contrast */
+}
+
+.card {
+  background-color: #ffffff; /* White background for the card */
+  border-radius: 8px; /* Rounded corners for a softer look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  padding: 20px; /* Space inside the card */
+  max-width: 300px; /* Restricts the card width */
+  text-align: center; /* Centers text inside the card */
+}
+
+.card h2 {
+  margin-top: 0; /* Removes default margin from the heading */
+  font-family: Arial, sans-serif; /* Sets a simple font */
+}
+
+.card p {
+  color: #666666; /* Gray color for the text */
+  font-size: 14px; /* Smaller font size for the paragraph */
+}
