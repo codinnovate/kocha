@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple To-Do List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 5px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .completed {
+            text-decoration: line-through;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>To-Do List</h1>
+    <input type="text" id="taskInput" placeholder="New task..." />
+    <button onclick="addTask()">Add Task</button>
+    <ul id="taskList"></ul>
+
+    <script>
+        function addTask() {
+            var taskInput = document.getElementById('taskInput');
+            var taskText = taskInput.value.trim();
+
+            // Check if input is empty
+            if (taskText === '') {
+                alert('Please enter a task.');
+                return;
+            }
+
+            // Create a new list item
+            var listItem = document.createElement('li');
+            listItem.innerHTML = taskText + ' <button onclick="toggleComplete(this)">Complete</button>';
+            document.getElementById('taskList').appendChild(listItem);
+
+            // Clear the input box
+            taskInput.value = '';
+        }
+
+        function toggleComplete(button) {
+            // Toggle the 'completed' class to visually mark the task as done
+            var listItem = button.parentElement;
+            listItem.classList.toggle('completed');
+        }
+    </script>
+
+</body>
+</html>
