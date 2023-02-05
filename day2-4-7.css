@@ -1,0 +1,19 @@
+/* This CSS snippet creates a simple card layout with a shadow effect and hover transition */
+
+.card-container {
+  display: flex; /* Aligns cards in a row */
+  gap: 20px; /* Adds space between cards */
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow to create a floating effect */
+  padding: 20px;
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  width: 200px;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Moves the card up slightly on hover */
+}
