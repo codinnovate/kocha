@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple To-Do List</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .todo-item { margin: 5px 0; }
+        .completed { text-decoration: line-through; color: gray; }
+    </style>
+</head>
+<body>
+
+    <h1>To-Do List</h1>
+    <!-- Input field for new to-do items and a button to add them to the list -->
+    <input type="text" id="newTodo" placeholder="Add a new task...">
+    <button onclick="addTodo()">Add</button>
+
+    <!-- Unordered list where new to-do items will be appended -->
+    <ul id="todoList"></ul>
+
+    <script>
+        // Function to add a new to-do item to the list
+        function addTodo() {
+            const todoInput = document.getElementById('newTodo');
+            const todoText = todoInput.value.trim(); // Get the input value and trim any extra spaces
+
+            if (todoText !== '') {
+                const listItem = document.createElement('li'); // Create a new list item
+                listItem.textContent = todoText;
+                listItem.classList.add('todo-item');
+                listItem.onclick = function() {
+                    listItem.classList.toggle('completed'); // Toggle completion state on click
+                };
+                document.getElementById('todoList').appendChild(listItem); // Add item to the list
+                todoInput.value = ''; // Clear the input field
+            }
+        }
+    </script>
+
+</body>
+</html>
