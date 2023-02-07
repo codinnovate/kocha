@@ -1,0 +1,26 @@
+/* This CSS snippet creates a simple responsive navigation bar */
+nav {
+  background-color: #333; /* Sets the background color of the nav bar */
+  overflow: hidden; /* Ensures the nav bar doesn't overflow the container */
+}
+
+nav a {
+  float: left; /* Aligns the nav links to the left */
+  display: block; /* Displays the links as block elements */
+  color: white; /* Sets the text color of the nav links */
+  text-align: center; /* Centers the text within each link */
+  padding: 14px 16px; /* Adds space inside the links for better clickability */
+  text-decoration: none; /* Removes the default underline from links */
+}
+
+nav a:hover {
+  background-color: #ddd; /* Changes the background on hover for better UX */
+  color: black; /* Changes the text color on hover for contrast */
+}
+
+@media screen and (max-width: 600px) {
+  nav a {
+    float: none; /* Stacks nav links vertically on small screens */
+    width: 100%; /* Ensures each link takes the full width of the nav */
+  }
+}
