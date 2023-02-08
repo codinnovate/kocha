@@ -1,0 +1,14 @@
+/* This CSS snippet centers a container both vertically and horizontally */
+.container {
+  display: flex; /* Applies flexbox layout to the container */
+  justify-content: center; /* Horizontally centers the items inside the container */
+  align-items: center; /* Vertically centers the items inside the container */
+  height: 100vh; /* Sets the height of the container to fill the entire viewport */
+}
+
+.item {
+  background-color: lightblue; /* Sets a background color for the item */
+  padding: 20px; /* Adds some spacing inside the item */
+  border-radius: 8px; /* Rounds the corners of the item */
+}
+```
