@@ -1,0 +1,15 @@
+/* This CSS snippet centers a div both horizontally and vertically within its parent container */
+.container {
+  display: flex; /* Activates flexbox layout on the container */
+  justify-content: center; /* Centers the div horizontally */
+  align-items: center; /* Centers the div vertically */
+  height: 100vh; /* Makes the container take the full viewport height */
+}
+
+.centered-div {
+  width: 200px; /* Sets a fixed width for the centered div */
+  height: 200px; /* Sets a fixed height for the centered div */
+  background-color: lightblue; /* Gives the div a background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+}
+```
