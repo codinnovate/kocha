@@ -1,0 +1,34 @@
+/* This CSS snippet creates a simple card component with a shadow effect */
+.card {
+  background-color: #fff; /* Sets the background color of the card to white */
+  border-radius: 8px; /* Rounds the corners of the card */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+  padding: 16px; /* Adds space inside the card */
+  max-width: 300px; /* Restricts the card's maximum width */
+  margin: 0 auto; /* Centers the card horizontally */
+}
+
+.card-title {
+  font-size: 1.5em; /* Increases the title's font size */
+  margin-bottom: 8px; /* Adds space below the title */
+}
+
+.card-content {
+  font-size: 1em; /* Sets the font size for the card content */
+  color: #333; /* Sets the text color to a dark gray */
+}
+
+.card-button {
+  display: inline-block; /* Makes the button behave like a block element while keeping it inline */
+  padding: 10px 20px; /* Adds space inside the button */
+  background-color: #007bff; /* Sets a blue background for the button */
+  color: #fff; /* Sets the text color to white */
+  text-decoration: none; /* Removes the underline from the button text */
+  border-radius: 4px; /* Rounds the corners of the button */
+  margin-top: 12px; /* Adds space above the button */
+  transition: background-color 0.3s; /* Smooth transition for the background color change */
+}
+
+.card-button:hover {
+  background-color: #0056b3; /* Changes the button's background color when hovered */
+}
