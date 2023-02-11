@@ -1,0 +1,37 @@
+/* This CSS snippet creates a simple responsive card layout that adjusts from a grid to a single column on smaller screens */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px; /* Space between the cards */
+  padding: 16px;
+}
+
+.card {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s; /* Smooth transition for hover effect */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Elevates the card slightly on hover */
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 8px 8px 0 0; /* Rounded corners on the top */
+}
+
+.card h3 {
+  margin: 16px 0 8px;
+  font-size: 1.25em;
+}
+
+.card p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9em;
+}
+```
