@@ -1,0 +1,25 @@
+/* This CSS snippet creates a responsive button with a hover effect. */
+
+/* Base styling for the button */
+.button {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  padding: 15px 32px; /* Padding for top/bottom and left/right */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Aligns button inline */
+  font-size: 16px; /* Font size */
+  margin: 4px 2px; /* Small margin around the button */
+  transition-duration: 0.4s; /* Smooth transition for hover effect */
+  cursor: pointer; /* Pointer cursor on hover */
+  border: none; /* Remove default border */
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Hover effect */
+.button:hover {
+  background-color: white; /* White background on hover */
+  color: black; /* Black text on hover */
+  border: 2px solid #4CAF50; /* Green border on hover */
+}
+```
