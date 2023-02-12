@@ -1,0 +1,30 @@
+/* This CSS code snippet creates a simple card layout with shadow and hover effects. 
+   It's useful for displaying content like user profiles, product features, etc. */
+
+.card-container {
+  display: flex; /* Makes the container flexible to hold multiple cards */
+  gap: 20px; /* Adds space between individual cards */
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px; /* Rounds the corners of the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow for depth effect */
+  padding: 20px;
+  max-width: 300px;
+  transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Moves the card up slightly on hover */
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.card-content {
+  font-size: 1em;
+  color: #333;
+}
