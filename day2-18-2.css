@@ -1,0 +1,26 @@
+/* This CSS snippet creates a simple card layout with a shadow effect. 
+   It is useful for displaying content in a visually appealing way. */
+
+.card {
+  background-color: #fff; /* White background for the card */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for a 3D effect */
+  padding: 16px; /* Space inside the card */
+  margin: 16px; /* Space outside the card */
+  max-width: 300px; /* Sets the maximum width of the card */
+  transition: transform 0.2s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.card:hover {
+  transform: translateY(-8px); /* Moves the card slightly upwards on hover */
+}
+
+.card-title {
+  font-size: 1.25em; /* Larger font size for the card title */
+  margin-bottom: 8px; /* Space between the title and the content */
+}
+
+.card-content {
+  font-size: 1em; /* Regular font size for the card content */
+  color: #333; /* Dark grey color for easy readability */
+}
