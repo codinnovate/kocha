@@ -1,0 +1,31 @@
+/* This CSS snippet creates a simple responsive navigation bar */
+
+/* Basic styling for the navigation bar */
+.navbar {
+  background-color: #333; /* Dark background color */
+  overflow: hidden; /* Ensures that the nav items do not overflow */
+}
+
+/* Styling for navigation links within the navbar */
+.navbar a {
+  float: left; /* Aligns links to the left */
+  display: block; /* Makes the links behave like block elements */
+  color: white; /* White text color for contrast */
+  text-align: center; /* Centers the text within each link */
+  padding: 14px 16px; /* Adds padding for better clickability */
+  text-decoration: none; /* Removes the underline from links */
+}
+
+/* Changes the color of links on hover for feedback */
+.navbar a:hover {
+  background-color: #ddd; /* Light background on hover */
+  color: black; /* Dark text color on hover */
+}
+
+/* Responsive design: Stack nav items vertically on small screens */
+@media screen and (max-width: 600px) {
+  .navbar a {
+    float: none; /* Removes float, allowing vertical stacking */
+    width: 100%; /* Full width for each nav item */
+  }
+}
