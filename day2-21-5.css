@@ -1,0 +1,24 @@
+/* This CSS snippet creates a simple responsive card layout with a hover effect */
+
+.card-container {
+  display: flex; /* Enables flexbox layout */
+  flex-wrap: wrap; /* Allows cards to wrap onto new lines */
+  gap: 16px; /* Adds space between cards */
+  justify-content: center; /* Centers the cards within the container */
+}
+
+.card {
+  background-color: #f9f9f9; /* Light grey background for the card */
+  border-radius: 8px; /* Rounded corners for the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  width: 300px; /* Fixed width for each card */
+  transition: transform 0.2s; /* Smooth transition for the hover effect */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slightly enlarges the card on hover */
+}
+
+.card-content {
+  padding: 16px; /* Adds padding inside the card for content */
+}
