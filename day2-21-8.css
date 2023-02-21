@@ -1,0 +1,21 @@
+/* Centering a div both vertically and horizontally using Flexbox */
+
+.container {
+  display: flex; /* Enables Flexbox on the container */
+  justify-content: center; /* Centers child elements horizontally */
+  align-items: center; /* Centers child elements vertically */
+  height: 100vh; /* Sets the container height to the full viewport height */
+  background-color: #f0f0f0; /* Light background color for visibility */
+}
+
+.centered-box {
+  width: 200px;
+  height: 100px;
+  background-color: #4CAF50; /* Green background for the centered box */
+  color: white; /* White text color for contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  border-radius: 8px; /* Rounded corners for the box */
+}
