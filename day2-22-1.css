@@ -1,0 +1,15 @@
+/* This CSS snippet creates a simple card component with a shadow effect and hover transition */
+
+.card {
+  background-color: #ffffff; /* Sets the background color of the card */
+  border-radius: 8px; /* Rounds the corners of the card */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+  max-width: 300px; /* Sets a maximum width for the card */
+  margin: 20px; /* Adds space around the card */
+  padding: 20px; /* Adds space inside the card */
+  transition: transform 0.2s; /* Smoothly transforms the card on hover */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Moves the card up slightly on hover */
+}
