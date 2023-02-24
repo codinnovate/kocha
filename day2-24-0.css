@@ -1,0 +1,15 @@
+/* This CSS snippet centers a div both horizontally and vertically on the page */
+body {
+  display: flex; /* Enables flexbox layout on the body */
+  justify-content: center; /* Centers the div horizontally */
+  align-items: center; /* Centers the div vertically */
+  height: 100vh; /* Sets the height to the full viewport height */
+  margin: 0; /* Removes default margin on body */
+}
+
+.centered-div {
+  background-color: #f0f0f0; /* Light grey background for visibility */
+  padding: 20px; /* Adds some space inside the div */
+  border-radius: 10px; /* Rounds the corners of the div */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow effect */
+}
