@@ -1,0 +1,27 @@
+/* This CSS code snippet creates a simple card layout for displaying content */
+.card-container {
+  display: flex; /* Use flexbox to align cards side by side */
+  gap: 20px; /* Add space between cards */
+  justify-content: center; /* Center the cards horizontally */
+  padding: 20px; /* Add padding around the container */
+}
+
+.card {
+  background-color: #f8f8f8; /* Set a light background color for the card */
+  border-radius: 10px; /* Round the corners of the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+  width: 300px; /* Set a fixed width for the card */
+  padding: 20px; /* Add padding inside the card for content */
+  text-align: center; /* Center the text inside the card */
+}
+
+.card h2 {
+  font-size: 1.5em; /* Increase the font size for the card title */
+  margin-bottom: 10px; /* Add space below the card title */
+}
+
+.card p {
+  font-size: 1em; /* Set a standard font size for the card text */
+  line-height: 1.5; /* Increase line height for better readability */
+  color: #333; /* Use a dark grey color for the text */
+}
