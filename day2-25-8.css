@@ -1,0 +1,21 @@
+/* This CSS snippet creates a visually appealing button with a gradient background and a hover effect */
+
+/* Basic button styling */
+.button {
+  background: linear-gradient(45deg, #4CAF50, #81C784); /* Green gradient background */
+  border: none; /* Removes the default border */
+  color: white; /* Sets the text color to white */
+  padding: 10px 20px; /* Adds padding for better spacing */
+  text-align: center; /* Centers the text */
+  text-decoration: none; /* Removes any text underline */
+  display: inline-block; /* Aligns the button inline with text */
+  font-size: 16px; /* Sets the font size */
+  margin: 4px 2px; /* Adds space around the button */
+  cursor: pointer; /* Changes the cursor to a pointer on hover */
+  transition: background 0.3s; /* Smooth transition for background color */
+}
+
+/* Hover effect */
+.button:hover {
+  background: linear-gradient(45deg, #81C784, #4CAF50); /* Reverse gradient on hover */
+}
