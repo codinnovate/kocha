@@ -1,0 +1,16 @@
+/* This CSS snippet centers a container both vertically and horizontally 
+   within the viewport, making it useful for creating modals or centered content. */
+
+.centered-container {
+  position: absolute; /* Position the container relative to the viewport */
+  top: 50%;           /* Move the top of the container to the middle of the viewport */
+  left: 50%;          /* Move the left of the container to the middle of the viewport */
+  transform: translate(-50%, -50%); /* Adjust the container's position to center it */
+  width: 300px;       /* Set a fixed width for the container */
+  height: 200px;      /* Set a fixed height for the container */
+  background-color: #f3f3f3; /* Set a background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  padding: 20px;      /* Add some padding inside the container */
+  text-align: center; /* Center text inside the container */
+  border-radius: 8px; /* Round the corners of the container */
+}
