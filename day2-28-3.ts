@@ -1,0 +1,21 @@
+// This TypeScript code snippet demonstrates a simple way to sort an array of objects by a specific property.
+
+// Define a type for a User object
+type User = {
+    name: string;
+    age: number;
+};
+
+// Create an array of User objects
+const users: User[] = [
+    { name: 'Alice', age: 30 },
+    { name: 'Bob', age: 25 },
+    { name: 'Charlie', age: 35 }
+];
+
+// Sort the users array by age in ascending order
+const sortedUsers = users.sort((a, b) => a.age - b.age);
+
+// Log the sorted array to the console
+console.log(sortedUsers);
+// Output: [ { name: 'Bob', age: 25 }, { name: 'Alice', age: 30 }, { name: 'Charlie', age: 35 } ]
