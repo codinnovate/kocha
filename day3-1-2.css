@@ -1,0 +1,26 @@
+/* This CSS snippet creates a simple card layout with a shadow effect. 
+   It's useful for highlighting content like blog posts or product features. */
+
+.card {
+  background-color: #ffffff; /* Sets the background color of the card */
+  border-radius: 8px; /* Rounds the corners of the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+  padding: 16px; /* Adds space inside the card */
+  margin: 16px; /* Adds space outside the card */
+  max-width: 300px; /* Restricts the maximum width of the card */
+}
+
+.card img {
+  width: 100%; /* Ensures images are responsive and take full width of the card */
+  border-radius: 8px 8px 0 0; /* Rounds the top corners of the image */
+}
+
+.card h3 {
+  margin-top: 0; /* Removes default margin from the top */
+  font-size: 1.25em; /* Sets a larger font size for the heading */
+}
+
+.card p {
+  font-size: 1em; /* Sets a standard font size for paragraph text */
+  color: #666666; /* Sets a gray color for the text */
+}
