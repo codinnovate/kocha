@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple To-Do List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        input[type="text"] {
+            width: 200px;
+            padding: 5px;
+        }
+        ul {
+            list-style-type: none;
+        }
+        li {
+            margin: 5px 0;
+            padding: 5px;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>To-Do List</h2>
+    <!-- Input field for adding new tasks -->
+    <input type="text" id="taskInput" placeholder="Add a new task...">
+    <button onclick="addTask()">Add</button>
+
+    <ul id="taskList"></ul>
+
+    <script>
+        function addTask() {
+            // Get the task input field and its value
+            var input = document.getElementById('taskInput');
+            var task = input.value.trim();
+
+            if (task) {
+                // Create a new list item and add the task to it
+                var li = document.createElement('li');
+                li.textContent = task;
+                document.getElementById('taskList').appendChild(li);
+
+                // Clear the input field after adding the task
+                input.value = '';
+            }
+        }
+    </script>
+
+</body>
+</html>
