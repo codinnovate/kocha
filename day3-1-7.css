@@ -1,0 +1,41 @@
+/* This CSS snippet creates a responsive card layout, useful for displaying items like products or articles. */
+
+.card-container {
+  display: grid; /* Use CSS Grid to create a flexible layout */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Cards will adjust to fit the screen size */
+  gap: 16px; /* Adds space between cards */
+  padding: 16px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Rounded corners for a modern look */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  overflow: hidden;
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift effect when hovering over the card */
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block; /* Ensures the image scales correctly */
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-title {
+  font-size: 1.25em;
+  margin: 0 0 8px;
+}
+
+.card-description {
+  font-size: 0.9em;
+  color: #555;
+}
