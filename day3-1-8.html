@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Task List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 5px 0;
+            padding: 8px;
+            background-color: #f2f2f2;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Task List</h1>
+    <input type="text" id="taskInput" placeholder="Enter new task" />
+    <button onclick="addTask()">Add Task</button>
+
+    <ul id="taskList">
+        <!-- Task items will appear here -->
+    </ul>
+
+    <script>
+        // This function adds a new task to the list when called
+        function addTask() {
+            // Retrieve the input value from the text box
+            var taskText = document.getElementById('taskInput').value;
+            
+            if (taskText === '') {
+                alert('Please enter a task!');
+                return;
+            }
+
+            // Create a new list item and add the task text to it
+            var li = document.createElement('li');
+            li.textContent = taskText;
+
+            // Append the new list item to the task list
+            document.getElementById('taskList').appendChild(li);
+
+            // Clear the input field for new entries
+            document.getElementById('taskInput').value = '';
+        }
+    </script>
+
+</body>
+</html>
