@@ -1,0 +1,35 @@
+/* This CSS snippet creates a simple card component with a shadow effect and responsive layout */
+
+.card {
+  background-color: #fff; /* Set the background color of the card to white */
+  border-radius: 8px; /* Rounded corners for a smooth look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  max-width: 300px; /* Limit the maximum width of the card */
+  margin: 20px auto; /* Center the card horizontally and add vertical spacing */
+  padding: 20px; /* Add padding inside the card for content spacing */
+  transition: transform 0.2s; /* Smooth transition effect for transform property */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift the card slightly upwards on hover */
+}
+
+.card img {
+  width: 100%; /* Make the image fill the card width */
+  border-radius: 8px 8px 0 0; /* Round only the top edges of the image */
+}
+
+.card-content {
+  text-align: center; /* Center the text content inside the card */
+}
+
+.card-title {
+  font-size: 1.5em; /* Increase the font size for the card title */
+  margin: 10px 0; /* Add some vertical spacing before and after the title */
+}
+
+.card-description {
+  color: #666; /* Set a lighter color for the description text */
+  font-size: 1em; /* Set a standard font size for the description */
+  line-height: 1.6; /* Improve readability with increased line height */
+}
