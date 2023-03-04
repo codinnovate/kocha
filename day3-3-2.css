@@ -1,0 +1,28 @@
+/* This CSS snippet creates a simple card layout that centers content both vertically and horizontally, with a drop shadow for a subtle 3D effect */
+
+.card-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  background-color: #f0f0f0; /* Light gray background */
+}
+
+.card {
+  background: white; /* White background for the card */
+  padding: 20px; /* Space inside the card */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  max-width: 300px; /* Maximum width of the card */
+  text-align: center; /* Center text inside the card */
+}
+
+.card h1 {
+  margin: 0; /* Remove default margin */
+  font-size: 1.5em; /* Larger heading size */
+}
+
+.card p {
+  color: #666; /* Gray text for paragraph */
+  font-size: 1em; /* Standard paragraph size */
+}
