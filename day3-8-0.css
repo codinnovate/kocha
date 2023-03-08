@@ -1,0 +1,29 @@
+/* This CSS snippet creates a simple responsive navigation bar with a hover effect */
+
+nav {
+  background-color: #333; /* Dark background for the navigation bar */
+  overflow: hidden; /* Ensures content doesn't overflow */
+}
+
+nav a {
+  float: left; /* Aligns the links to the left of the nav bar */
+  display: block; /* Makes links take up full height of nav bar */
+  color: #f2f2f2; /* Light color for text */
+  text-align: center; /* Centers text within each link block */
+  padding: 14px 16px; /* Adds space around the text */
+  text-decoration: none; /* Removes default underline */
+  font-size: 17px; /* Sets a readable font size */
+}
+
+nav a:hover {
+  background-color: #ddd; /* Light background when a user hovers over a link */
+  color: black; /* Changes text color to black on hover */
+}
+
+@media screen and (max-width: 600px) {
+  nav a {
+    float: none; /* Stacks links vertically on small screens */
+    width: 100%; /* Makes links take up full width of nav bar */
+  }
+}
+```
