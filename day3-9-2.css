@@ -1,0 +1,32 @@
+/* This CSS snippet creates a simple card layout with a shadow effect */
+.card {
+  /* Define a fixed width and height for the card */
+  width: 300px;
+  height: 200px;
+  
+  /* Add padding inside the card for content spacing */
+  padding: 20px;
+  
+  /* Set a light background color */
+  background-color: #f9f9f9;
+  
+  /* Add a border-radius for rounded corners */
+  border-radius: 8px;
+  
+  /* Create a subtle shadow effect to lift the card off the page */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+  /* Use flexbox to center content within the card */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* Add a simple transition for smooth hover effects */
+  transition: transform 0.2s;
+}
+
+/* Define a hover effect to slightly scale up the card */
+.card:hover {
+  transform: scale(1.05);
+}
+```
