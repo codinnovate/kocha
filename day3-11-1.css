@@ -1,0 +1,37 @@
+/* This CSS snippet creates a simple card layout for displaying content */
+
+/* Container for the card */
+.card {
+  width: 300px; /* Sets the width of the card */
+  border: 1px solid #ccc; /* Adds a light grey border */
+  border-radius: 8px; /* Rounds the corners of the card */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+  overflow: hidden; /* Ensures content stays within the card bounds */
+  margin: 16px; /* Adds space around the card */
+}
+
+/* Header section of the card */
+.card-header {
+  background-color: #f4f4f4; /* Light grey background for the header */
+  padding: 16px; /* Adds padding inside the header */
+  font-size: 1.25em; /* Larger font size for the header text */
+  text-align: center; /* Centers the header text */
+}
+
+/* Body section of the card */
+.card-body {
+  padding: 16px; /* Adds padding inside the body */
+  font-size: 1em; /* Regular font size for the body text */
+  color: #333; /* Dark grey color for the body text */
+}
+
+/* Example usage */
+.example-card {
+  background-color: #fff; /* White background for the example card */
+}
+
+.example-card .card-header {
+  background-color: #007BFF; /* Blue background for the example card header */
+  color: #fff; /* White text color for the example card header */
+}
+```
