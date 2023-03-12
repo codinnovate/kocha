@@ -1,0 +1,22 @@
+/* This CSS snippet creates a simple card layout with shadow and rounded corners */
+.card {
+    background-color: #ffffff; /* Sets the card background to white */
+    border-radius: 8px; /* Rounds the corners of the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    padding: 16px; /* Adds space inside the card for content */
+    margin: 16px; /* Adds space outside the card to separate it from other elements */
+    max-width: 400px; /* Limits the card width for a consistent look */
+}
+
+/* Enhancing the card title with larger text and bold weight */
+.card-title {
+    font-size: 1.5em; /* Increases font size for emphasis */
+    font-weight: bold; /* Makes the text bold */
+    margin-bottom: 8px; /* Adds space below the title for separation */
+}
+
+/* Styling the card content with a lighter text color */
+.card-content {
+    color: #555555; /* Sets the text color to a soft gray */
+    line-height: 1.6; /* Improves readability by increasing line spacing */
+}
