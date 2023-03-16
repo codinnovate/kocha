@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple To-Do List</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .task { display: flex; align-items: center; margin-bottom: 10px; }
+        .task input[type="checkbox"] { margin-right: 10px; }
+    </style>
+</head>
+<body>
+    <h1>To-Do List</h1>
+    <!-- A simple form to add new tasks to the list -->
+    <form id="task-form">
+        <input type="text" id="new-task" placeholder="Enter new task" required>
+        <button type="submit">Add Task</button>
+    </form>
+    <ul id="task-list"></ul>
+
+    <script>
+        const form = document.getElementById('task-form');
+        const taskList = document.getElementById('task-list');
+
+        // Event listener for form submission to add a new task to the list
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevents the page from reloading on form submission
+            const taskText = document.getElementById('new-task').value;
+            const listItem = document.createElement('li');
+            listItem.className = 'task';
+            listItem.innerHTML = `<input type="checkbox"> <span>${taskText}</span>`;
+            taskList.appendChild(listItem);
+            form.reset(); // Clears the input field after adding a task
+        });
+    </script>
+</body>
+</html>
