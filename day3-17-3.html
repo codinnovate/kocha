@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive To-Do List</title>
+    <style>
+        /* Basic styling for the to-do list */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .todo-container {
+            max-width: 400px;
+            margin: auto;
+            text-align: center;
+        }
+        .todo-item {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px 0;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="todo-container">
+        <h1>To-Do List</h1>
+        <input type="text" id="todoInput" placeholder="Add a new task">
+        <button onclick="addTodo()">Add</button>
+        <ul id="todoList"></ul>
+    </div>
+
+    <script>
+        // Function to add a new task to the to-do list
+        function addTodo() {
+            const input = document.getElementById('todoInput');
+            const todoText = input.value.trim();
+            if (todoText !== '') {
+                const list = document.getElementById('todoList');
+                const listItem = document.createElement('li');
+                listItem.className = 'todo-item';
+                listItem.innerHTML = `${todoText} <button onclick="removeTodo(this)">Remove</button>`;
+                list.appendChild(listItem);
+                input.value = '';
+            }
+        }
+
+        // Function to remove a task from the to-do list
+        function removeTodo(button) {
+            const listItem = button.parentElement;
+            listItem.remove();
+        }
+    </script>
+</body>
+</html>
