@@ -1,0 +1,26 @@
+# This code snippet demonstrates how to read a text file and count the frequency of each word.
+# It helps in understanding file handling and basic text processing in Python.
+
+# Open the text file in read mode
+with open('sample.txt', 'r') as file:
+    text = file.read()
+
+# Split the text into words and convert them to lowercase for uniformity
+words = text.lower().split()
+
+# Create a dictionary to store word frequencies
+word_count = {}
+
+# Iterate over each word and update the word count
+for word in words:
+    if word in word_count:
+        word_count[word] += 1
+    else:
+        word_count[word] = 1
+
+# Sort the dictionary by word frequency in descending order and print the result
+sorted_word_count = sorted(word_count.items(), key=lambda item: item[1], reverse=True)
+
+# Print the sorted list of words and their frequencies
+for word, count in sorted_word_count:
+    print(f"{word}: {count}")
