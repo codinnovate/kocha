@@ -1,0 +1,11 @@
+// This function sorts an array of numbers in ascending order using the built-in sort method.
+function sortNumbersAscending(arr) {
+    // The sort method sorts elements as strings by default, so we provide a compare function for numeric sorting.
+    return arr.sort((a, b) => a - b);
+}
+
+// Example usage
+const numbers = [5, 3, 8, 1, 2];
+const sortedNumbers = sortNumbersAscending(numbers);
+
+console.log(sortedNumbers); // Output: [1, 2, 3, 5, 8]
