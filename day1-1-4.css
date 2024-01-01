@@ -1,0 +1,18 @@
+/* This CSS snippet creates a simple button with a hover effect */
+.button {
+  background-color: #4CAF50; /* Green background color */
+  border: none; /* Removes the border */
+  color: white; /* White text color */
+  padding: 15px 32px; /* Adds padding for size */
+  text-align: center; /* Centers the text */
+  text-decoration: none; /* Removes underline from text */
+  display: inline-block; /* Displays the button inline */
+  font-size: 16px; /* Sets the font size */
+  margin: 4px 2px; /* Adds margin around the button */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.button:hover {
+  background-color: #45a049; /* Changes background color on hover */
+}
