@@ -1,0 +1,20 @@
+/* This CSS snippet creates a simple card layout with a shadow effect, useful for displaying content like product descriptions or user profiles */
+
+.card-container {
+  max-width: 300px; /* Sets the maximum width of the card */
+  margin: 20px auto; /* Centers the card horizontally and adds vertical spacing */
+  padding: 20px; /* Adds space inside the card */
+  border-radius: 10px; /* Rounds the corners of the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Creates a shadow effect for depth */
+  background-color: #fff; /* Sets the background color to white */
+}
+
+.card-title {
+  font-size: 1.5em; /* Increases the font size for the card title */
+  margin-bottom: 10px; /* Adds space below the title */
+}
+
+.card-content {
+  font-size: 1em; /* Sets the font size for the card content */
+  color: #333; /* Changes the text color to a dark gray for better readability */
+}
