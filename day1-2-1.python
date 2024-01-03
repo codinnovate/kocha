@@ -1,0 +1,21 @@
+# This code snippet demonstrates how to read a CSV file and sort its rows by a specified column.
+import csv
+
+def read_and_sort_csv(file_path, sort_column_index):
+    # Open the CSV file for reading
+    with open(file_path, mode='r', newline='') as csvfile:
+        csv_reader = csv.reader(csvfile)
+        # Read the header separately to keep it from being sorted with the data
+        header = next(csv_reader)
+        # Sort the data rows based on the specified column index
+        sorted_rows = sorted(csv_reader, key=lambda row: row[sort_column_index])
+
+    # Print the header and the sorted data
+    print(header)
+    for row in sorted_rows:
+        print(row)
+
+# Usage example:
+# Assuming 'example.csv' has columns: 'ID', 'Name', 'Age' and you want to sort by 'Age' (index 2)
+read_and_sort_csv('example.csv', 2)
+```
