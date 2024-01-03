@@ -1,0 +1,24 @@
+// This code snippet demonstrates how to sort an array of objects by a specific property using TypeScript.
+
+// Define an interface for the object structure
+interface Product {
+  name: string;
+  price: number;
+}
+
+// Create an array of products
+const products: Product[] = [
+  { name: 'Laptop', price: 1200 },
+  { name: 'Smartphone', price: 800 },
+  { name: 'Tablet', price: 500 }
+];
+
+// Function to sort products by price in ascending order
+function sortProductsByPrice(products: Product[]): Product[] {
+  return products.sort((a, b) => a.price - b.price);
+}
+
+// Use the sorting function and log the sorted array
+const sortedProducts = sortProductsByPrice(products);
+console.log(sortedProducts);
+```
